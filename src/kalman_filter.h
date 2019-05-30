@@ -4,6 +4,14 @@
 #include "Eigen/Dense"
 
 class KalmanFilter {
+
+ private:
+    /**
+    *   Common calculation for KF (Kalman Filter) and EKF (Extended Kalman Filter).
+    *   @param y.
+    */
+  void UpdateCommon(const Eigen::VectorXd &y);
+
  public:
   /**
    * Constructor
